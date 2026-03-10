@@ -16,9 +16,21 @@
 <body>
 
   <!-- Background music -->
-  <audio autoplay loop>
-    <source src="./src/assets/song.mp3" type="audio/mpeg">
-  </audio>
+<!-- Audio -->
+<audio id="bg-audio" loop>
+  <source src="./src/assets/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Permission overlay -->
+<div id="audio-permission-overlay" class="">
+  <p class="">💖 To make this experience complete, please allow music to play 🎵</p>
+  <button id="allow-audio-btn"><i class="pi pi-play"></i> Play Our Song</button>
+</div>
+
+<!-- Music control button -->
+<button id="music-toggle-btn" class="music-btn hidden">
+  <i class="pi pi-volume-up"></i>
+</button>
 
   <div id="app">
 
